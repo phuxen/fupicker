@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>fuPicker</title>
+		<link rel="stylesheet" media="screen" href="reset.css" />
+		<link rel="stylesheet" media="screen" href="styles.css" />
+		<link rel="stylesheet" media="screen" href="fupicker/jquery.fupicker.css" />
+		<link rel="stylesheet" media="screen" href="fupicker/jquery.fupicker.dark2.css" />
+		<link rel="stylesheet" media="screen" href="fupicker/jquery.fupicker.light2.css" />
+		<script type="text/javascript" src="jquery-1.3.js"></script>
+		<script type="text/javascript" src="fupicker/jquery.fupicker.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<h1>fupicker test page</h1>
+			<div id="tabs">
+				<div id="tab1">
+					<div class="pickerWrapper">
+						<!-- fupicker markup -->
+						<div class="fuPickerContainer dark">
+							<div class="fuPickerWrapper">
+								<div class="fuPickerColorBox">
+									<div class="fuPickerColorBoxColor"></div>
+									<div class="fuPickerColorBoxShade"></div>
+									<div class="fuPickerColorSelector"></div>
+								</div>
+								<div class="fuPickerHue">
+									<div class="fuPickerHueSelector"></div>
+								</div>
+								<div class="fuPickerInputs">
+									<div class="fuPickerClose"></div>
+									<div class="fuPickerInput fuPickerInputSmall">
+										<label>R</label>
+										<input class="fuPickerColor_R" type="text" maxlength="3" value="255" />
+									</div>
+									<div class="fuPickerInput fuPickerInputSmall">
+										<label>G</label>
+										<input class="fuPickerColor_G" type="text" maxlength="3" value="127" />
+									</div>
+									<div class="fuPickerInput fuPickerInputSmall">
+										<label>B</label>
+										<input class="fuPickerColor_B" type="text" maxlength="3" value="63" />
+									</div>
+									<div class="fuPickerInput fuPickerInputHex">
+										<label>#</label>
+										<input class="fuPickerColor_Hex" type="text" maxlength="6" value="FF7F3F" />
+									</div>
+								</div>
+								<div class="fuPickerPreview"></div>
+							</div>
+						</div>
+						<!-- fupicker markup end -->
+					</div>
+					<div class="clear"></div>
+					<div class="pickerWrapper">
+						<!-- fupicker markup -->
+						<div class="fuPickerContainer dark2">
+							<div class="fuPickerWrapper">
+								<div class="fuPickerColorBox">
+									<div class="fuPickerColorBoxColor"></div>
+									<div class="fuPickerColorBoxShade"></div>
+									<div class="fuPickerColorSelector"></div>
+								</div>
+								<div class="fuPickerHue">
+									<div class="fuPickerHueSelector"></div>
+								</div>
+								<div class="fuPickerInputs">
+									<div class="fuPickerInput fuPickerInputSmall">
+										<label>R</label>
+										<input class="fuPickerColor_R" type="text" maxlength="3" value="255" />
+									</div>
+									<div class="fuPickerInput fuPickerInputSmall">
+										<label>G</label>
+										<input class="fuPickerColor_G" type="text" maxlength="3" value="127" />
+									</div>
+									<div class="fuPickerInput fuPickerInputSmall">
+										<label>B</label>
+										<input class="fuPickerColor_B" type="text" maxlength="3" value="63" />
+									</div>
+									<div class="fuPickerInput fuPickerInputHex">
+										<label>HEX</label>
+										<input class="fuPickerColor_Hex" type="text" maxlength="6" value="FF7F3F" />
+									</div>
+									<div class="fuPickerPreview"></div>
+									<div class="fuPickerClose"></div>
+								</div>
+							</div>
+						</div>
+						<!-- fupicker markup end -->
+					</div>
+					<div class="clear"></div>
+					<div class="pickerWrapper">
+						<!-- fupicker markup -->
+						<div class="fuPickerContainer light2">
+							<div class="fuPickerWrapper">
+								<div class="fuPickerColorBox">
+									<div class="fuPickerColorBoxColor"></div>
+									<div class="fuPickerColorBoxShade"></div>
+									<div class="fuPickerColorSelector"></div>
+								</div>
+								<div class="fuPickerHue">
+									<div class="fuPickerHueSelector"></div>
+								</div>
+								<div class="fuPickerInputs">
+									<div class="fuPickerInput fuPickerInputSmall">
+										<label>R</label>
+										<input class="fuPickerColor_R" type="text" maxlength="3" value="255" />
+									</div>
+									<div class="fuPickerInput fuPickerInputSmall">
+										<label>G</label>
+										<input class="fuPickerColor_G" type="text" maxlength="3" value="127" />
+									</div>
+									<div class="fuPickerInput fuPickerInputSmall">
+										<label>B</label>
+										<input class="fuPickerColor_B" type="text" maxlength="3" value="63" />
+									</div>
+									<div class="fuPickerInput fuPickerInputHex">
+										<label>HEX</label>
+										<input class="fuPickerColor_Hex" type="text" maxlength="6" value="FF7F3F" />
+									</div>
+									<div class="fuPickerPreview"></div>
+									<div class="fuPickerClose"></div>
+								</div>
+							</div>
+						</div>
+						<!-- fupicker markup end -->
+					</div>
+				</div>
+				<div id="tab2">
+					<div class="clear"></div>
+					<div class="picker"></div>
+					<input type="text" class="inputPicker" value="007f00" />
+					<div class="picker right"></div>
+					<div class="clear"></div>
+					<div style="height:200px"></div>
+					<div class="picker"></div>
+					<div class="picker right"></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				var settings = {
+					skin:'light2',
+					open:function(e) {
+						// console.log(e);
+					},
+					close: function(e) {
+						// console.log(e);
+					},
+					selecting: function(e) {
+						e.opener.css({backgroundColor:'#' + e.color.hex});
+					},
+					selected: function(e) {
+						
+					}
+				};
+				$('div.picker').fupicker({
+					skin:'light2',
+					open:function(e) {
+						// console.log(e);
+					},
+					close: function(e) {
+						// console.log(e);
+					},
+					selecting: function(e) {
+						e.opener.css({backgroundColor:'#' + e.color.hex});
+					},
+					selected: function(e) {
+						
+					}
+				});
+				$('input.inputPicker').fupicker({
+					skin:'light2'
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,144 @@
+.fuPickerContainer.dark {
+	display:block;
+	width:260px;
+	height:128px;
+	background-color:#222;
+	padding:8px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	font-family:Helvetica, Arial, sans-serif;
+}
+.fuPickerContainer.dark .fuPickerWrapper {
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+.fuPickerContainer.dark .fuPickerColorBox {
+	width:128px;
+	height:128px;
+	position:relative;
+	margin-right:8px;
+	float:left;
+	cursor:crosshair;
+}
+.fuPickerContainer.dark .fuPickerColorBoxShade {
+	width:128px;
+	height:128px;
+	background:url("images/overlay_128.png") top left no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.fuPickerContainer.dark .fuPickerColorBoxColor {
+	width:128px;
+	height:128px;
+	background-color:#ff0000;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.fuPickerContainer.dark .fuPickerColorSelector {
+	width:9px;
+	height:9px;
+	display:block;
+	position:absolute;
+	top:-4px;
+	left:-4px;
+	background:url('images/mainSelector.png');
+}
+
+.fuPickerContainer.dark .fuPickerHue {
+	position:relative;
+	width:16px;
+	height:128px;
+	background:url("images/hue.png") top left no-repeat;
+	float:left;
+	margin-right:8px;
+	cursor:crosshair;
+}
+
+.fuPickerContainer.dark .fuPickerHueSelector {
+	width:22px;
+	height:5px;
+	display:block;
+	position:absolute;
+	top:-2px;
+	left:-3px;
+	margin-left:3px;
+	background:url('images/hueSelector2.png') no-repeat;
+}
+
+.fuPickerContainer.dark .fuPickerInputs {
+	height:128px;
+	float:left;
+}
+.fuPickerContainer.dark .fuPickerInput {
+	
+	height:24px;
+	margin-bottom:4px;
+	clear:both;
+}
+.fuPickerContainer.dark .fuPickerInput label {
+	display:block;
+	float:left;
+	font-size:14px;
+	line-height:16px;
+	color:#777;
+	width:20px;
+	height:16px;
+	padding:4px;
+	text-align:right;
+	background-color:#333;
+	border-radius:4px 0 0 4px;
+	-webkit-border-radius:4px 0 0 4px;
+	-moz-border-radius:4px 0 0 4px;
+	text-shadow: rgba(0,0,0,0.5) -1px -1px 0;
+	
+}
+.fuPickerContainer.dark .fuPickerInput input {
+	background-color:#111;
+	border:2px solid #333;
+	border-radius:0 4px 4px 0;
+	-webkit-border-radius:0 4px 4px 0;
+	-moz-border-radius:0 4px 4px 0;
+	color:#777;
+	display:block;
+	float:left;
+	margin:0;
+	padding:2px 4px;
+	font-size:14px;
+	height:16px;
+	text-align:right;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+.fuPickerContainer.dark .fuPickerInputHex input {
+	width:60px;
+}
+.fuPickerContainer.dark .fuPickerInputSmall input {
+	width:28px;
+}
+.fuPickerContainer.dark .fuPickerClose {
+	float:right;
+	cursor:pointer;
+	clear:both;
+	height:12px;
+	margin-bottom:8px;
+	width:12px;
+	background:url('images/close.png') no-repeat top left;
+}
+.fuPickerContainer.dark .fuPickerPreview {
+	width:26px;
+	height:79px;
+	background-color:#f00;
+	position:absolute;
+	right:0px;
+	top:20px;
+	border:1px solid #111;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}

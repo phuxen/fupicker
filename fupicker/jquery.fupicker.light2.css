@@ -1,0 +1,160 @@
+.fuPickerContainer.light2 {
+	display:block;
+	width:152px;
+	height:184px;
+	background-color:#eee;
+	padding:8px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	font-family:Helvetica, Arial, sans-serif;
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	border:1px solid #bbb;
+}
+
+.fuPickerContainer.light2 .fuPickerWrapper {
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+.fuPickerContainer.light2 .fuPickerColorBox {
+	width:128px;
+	height:128px;
+	position:relative;
+	margin-right:8px;
+	float:left;
+	cursor:crosshair;
+}
+.fuPickerContainer.light2 .fuPickerColorBoxShade {
+	width:128px;
+	height:128px;
+	background:url("images/overlay_128.png") top left no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.fuPickerContainer.light2 .fuPickerColorBoxColor {
+	width:128px;
+	height:128px;
+	background-color:#ff0000;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.fuPickerContainer.light2 .fuPickerColorSelector {
+	width:9px;
+	height:9px;
+	display:block;
+	position:absolute;
+	top:-4px;
+	left:-4px;
+	background:url('images/mainSelector.png');
+}
+
+.fuPickerContainer.light2 .fuPickerHue {
+	position:relative;
+	width:16px;
+	height:128px;
+	background:url("images/hue.png") top left no-repeat;
+	float:left;
+	cursor:crosshair;
+}
+
+.fuPickerContainer.light2 .fuPickerHueSelector {
+	width:22px;
+	height:5px;
+	display:block;
+	position:absolute;
+	top:-2x;
+	left:-3px;
+	margin-left:3px;
+	background:url('images/hueSelector2.png') no-repeat;
+}
+
+.fuPickerContainer.light2 .fuPickerInputs {
+	position:absolute;
+	top:136px;
+	left:0;
+	width:170px;
+	
+}
+.fuPickerContainer.light2 .fuPickerInput {
+	
+	height:28px;
+	float:left;
+}
+
+.fuPickerContainer.light2 .fuPickerInput label {
+	display:block;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	line-height:16px;
+	color:#777;
+	width:8px;
+	height:16px;
+	padding-top:2px;
+	padding-right:4px;
+	text-align:right;
+	text-shadow: rgba(255,255,255,0.7) 1px 1px 0;
+	
+}
+.fuPickerContainer.light2 .fuPickerInput input {
+	background-color:#fff;
+	background:url('images/inputGrad.png') repeat-x top left;
+	border:1px solid #ccc;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	color:#777;
+	display:block;
+	float:left;
+	margin:0;
+	padding:1px 2px;
+	font-size:12px;
+	height:16px;
+	text-align:right;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+.fuPickerContainer.light2 .fuPickerInputHex {
+	margin-right:4px;
+}
+.fuPickerContainer.light2 .fuPickerInputHex label {
+	width:24px;
+}
+.fuPickerContainer.light2 .fuPickerInputHex input {
+	width:54px;
+}
+
+.fuPickerContainer.light2 .fuPickerInputSmall {
+	margin-right:13px;
+}
+.fuPickerContainer.light2 .fuPickerInputSmall input {
+	width:24px;
+}
+.fuPickerContainer.light2 .fuPickerClose {
+	float:left;
+	cursor:pointer;
+	margin-left:8px;
+	margin-top:12px;
+	height:12px;
+	width:12px;
+	background:url('images/closeLight.png') no-repeat top left;
+}
+
+.fuPickerContainer.light2 .fuPickerPreview {
+	width:38px;
+	height:18px;
+	margin-left:4px;
+	background-color:#f00;
+	float:left;
+	border:1px solid #ccc;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+}
